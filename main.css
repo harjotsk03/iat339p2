@@ -455,6 +455,26 @@ margin-top: 5.75rem;
   border-top-left-radius: 7rem;
 }
 
+.guarentee{
+  height: 10vh;
+  padding: 10rem 10rem;
+  background-color: yellow;
+  color: white;
+  border-top-right-radius: 7rem;
+  margin-top: -6.5rem;
+  border-top-left-radius: 7rem;
+}
+
+.customerReviews{
+  height: 20vh;
+  padding: 10rem 10rem;
+  background-color: blue;
+  color: white;
+  border-top-right-radius: 7rem;
+  margin-top: -6.5rem;
+  border-top-left-radius: 7rem;
+}
+
 .colourSection{
   margin-top: 1rem;
 }
@@ -491,6 +511,10 @@ margin-top: 5.75rem;
 .footer{
   background: #23473c;
   padding: 5rem 14rem;
+  color: white;
+  border-top-right-radius: 7rem;
+  margin-top: -7rem;
+  border-top-left-radius: 7rem;
 }
 
 .footerText{
