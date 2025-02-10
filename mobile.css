@@ -1,0 +1,812 @@
+@media screen and (max-width: 1280px) {
+  section{
+    padding: 0rem 1rem;
+  }  
+
+  .page{
+  padding: 0rem 2rem;
+}
+
+  .mainHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.25rem;
+}
+
+.secondaryHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.75rem;
+}
+
+.subHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.secondarySubHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+.colorPalleteBox{
+  width: 100%;
+  height: 5rem;
+}
+
+.navReal{
+  z-index: 40;
+  background: #23473c;
+  height: max-content;
+  display: flex;
+  height: 4rem;
+  justify-content: end;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav{
+  width: 30vw;
+  background: #23473c;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navButton{
+  color: white;
+  background-color: transparent;
+  border: none;
+  transition: 0.3s ease-in-out all;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  padding: 1rem 1.2rem;
+  font-weight: 400;
+  opacity: 40%;
+}
+
+.navButtonActive{
+  color: #F4EBD0;
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+  transition: 0.3s ease-in-out all;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.navButton:hover,
+.navButton:focus{
+  cursor: pointer;
+  opacity: 100%;
+  transform: scale(0.92);
+}
+
+.roundedLeft{
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.roundedRight{
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.header{
+  padding: 1rem 0rem 3rem 2.5rem;
+  background-color: #23473c;
+  color: white;
+}
+
+
+.footer{
+  background: #23473c;
+  padding: 4rem 3rem;
+}
+
+.footerText{
+ font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem; 
+  color: white;
+}
+
+.footerText2{
+font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: white;
+  opacity: 50%;
+}
+
+
+
+.fontContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 4rem;
+}
+
+.fontShowCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-bottom: 0.1rem solid #e4e7ea;
+  padding: 1.5rem 0rem;
+  min-height: 4rem;
+}
+
+.fontShowCard p {
+  margin: 0; 
+  text-align: left;
+}
+
+
+.desktop{
+  visibility: hidden;
+  width: 1rem;
+}
+
+.mobile{
+  visibility: visible;
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    width: 1.75rem;
+    gap: 0.4rem;
+    background-color: transparent;
+    border: none;
+    margin-right: 1rem;
+}
+
+.line{
+    width: 100%;
+    background-color: #e4e7ea;
+    height: 0.2rem;
+}
+
+.navLinks {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background: #23473c;
+}
+
+.navLinks.active {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.paragraphText{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  max-width: 100%;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.mt-xs{
+  margin-top: 0.25rem;
+}
+
+.mt-s{
+  margin-top: 0.75rem;
+}
+
+.mt-small{
+  margin-top: 1.75rem;
+}
+
+.mt-base{
+  margin-top: 3.5rem;
+}
+
+.mt-extra{
+margin-top: 4.75rem;
+}
+
+
+
+.inputContainer{
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+}
+
+.inputFormContainer{
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.input {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #23473c;
+}
+
+.submit-button{
+  background-color: #23473c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: ease-in-out 0.3s all;
+  width: max-content;
+}
+
+.submit-button:hover,
+.submit-button:focus{
+  background-color: #5c726b;
+  color: white;
+  cursor: pointer;
+}
+
+.inputLabel{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #6c6e71;
+}
+
+
+.nav{
+  width: 100%;
+  background: #23473c;
+  height: max-content;
+  display: flex;
+  padding: 1rem 0rem;
+  flex-direction: row;
+  justify-content:end;
+  align-items: center;
+}
+
+.productCard {
+  width: 100%;
+  background: #fafafa;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.productCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.productCardText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #55575a;
+}
+
+.table1ImageContainer {
+  width: 100%;
+  border: none;
+  height: 20rem;
+  background-image: url(./assets/tableImg1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem 0.75rem 0rem 0rem;
+  transition: background-image 0.3s ease;
+}
+
+.productCard:hover .table1ImageContainer {
+  background-image: url(./assets/tableImg2.png);
+  cursor: pointer;
+}
+
+
+.productCardButtons{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.productCardButtons button{
+  width: 100%;
+}
+
+
+
+.contactCard{
+  background-color: transparent;
+  width: max-content;
+  width: 70vw;
+  border-radius: 0.75rem;
+  padding: 0rem;
+}
+
+.inputContainer{
+  display: flex;
+  gap: 0.3rem;
+  width: 100%;
+  flex-direction: column;
+
+}
+
+.citationLink {
+  font-size: 1rem;
+  font-family: "Poppins";
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+.citations{
+    width: 10rem;
+}
+
+.inTextLink{
+      font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 1.1rem;
+  max-width: 75%;
+}
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+  section{
+    padding: 0rem 1rem;
+  }  
+
+  .page{
+    overflow-x: hidden;
+}
+
+  .mainHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.25rem;
+}
+
+.secondaryHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.75rem;
+}
+
+.subHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.secondarySubHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+.colorPalleteBox{
+  width: 100%;
+  height: 5rem;
+}
+
+.navReal{
+  z-index: 40;
+  background: #23473c;
+  height: max-content;
+  display: flex;
+  height: 4rem;
+  justify-content: end;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav{
+  width: 90vw;
+  background: #23473c;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navButton{
+  color: white;
+  background-color: transparent;
+  border: none;
+  transition: 0.3s ease-in-out all;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  padding: 1rem 1.2rem;
+  font-weight: 400;
+  opacity: 40%;
+}
+
+.navButtonActive{
+  color: #F4EBD0;
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+  transition: 0.3s ease-in-out all;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.navButton:hover,
+.navButton:focus{
+  cursor: pointer;
+  opacity: 100%;
+  transform: scale(0.92);
+}
+
+.roundedLeft{
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.roundedRight{
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.header{
+  padding: 1rem 0rem 3rem 2.5rem;
+  background-color: #23473c;
+  color: white;
+}
+
+
+.footer{
+  background: #23473c;
+  padding: 4rem 3rem;
+}
+
+.footerText{
+ font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem; 
+  color: white;
+}
+
+.footerText2{
+font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: white;
+  opacity: 50%;
+}
+
+
+
+.fontContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 4rem;
+}
+
+.fontShowCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-bottom: 0.1rem solid #e4e7ea;
+  padding: 1.5rem 0rem;
+  min-height: 4rem;
+}
+
+.fontShowCard p {
+  margin: 0; 
+  text-align: left;
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    width: 1.75rem;
+    gap: 0.4rem;
+    background-color: transparent;
+    border: none;
+    margin-right: 1rem;
+}
+
+.line{
+    width: 100%;
+    background-color: #e4e7ea;
+    height: 0.2rem;
+}
+
+.navLinks {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background: #23473c;
+}
+
+.navLinks.active {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.paragraphText{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  max-width: 100%;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.mt-xs{
+  margin-top: 0.25rem;
+}
+
+.mt-s{
+  margin-top: 0.75rem;
+}
+
+.mt-small{
+  margin-top: 1.75rem;
+}
+
+.mt-base{
+  margin-top: 3.5rem;
+}
+
+.mt-extra{
+margin-top: 4.75rem;
+}
+
+
+
+.inputContainer{
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+}
+
+.inputFormContainer{
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.input {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #23473c;
+}
+
+.submit-button{
+  background-color: #23473c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: ease-in-out 0.3s all;
+  width: max-content;
+}
+
+.submit-button:hover,
+.submit-button:focus{
+  background-color: #5c726b;
+  color: white;
+  cursor: pointer;
+}
+
+
+.inputLabel{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #6c6e71;
+}
+
+
+.nav{
+  width: 10rem;
+  background: #23473c;
+  height: max-content;
+  display: flex;
+  padding: 1rem 0rem;
+  flex-direction: row;
+  justify-content:end;
+  align-items: center;
+}
+
+.productCard {
+  width: 100%;
+  background: #fafafa;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.productCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.productCardText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #55575a;
+}
+
+.table1ImageContainer {
+  width: 100%;
+  border: none;
+  height: 20rem;
+  background-image: url(./assets/tableImg1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem 0.75rem 0rem 0rem;
+  transition: background-image 0.3s ease;
+}
+
+.productCard:hover .table1ImageContainer {
+  background-image: url(./assets/tableImg2.png);
+  cursor: pointer;
+}
+
+
+.productCardButtons{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.productCardButtons button{
+  width: 100%;
+}
+
+
+.inputContainer{
+  display: flex;
+  gap: 0.3rem;
+  width: 100%;
+  flex-direction: column;
+
+}
+
+.citationLink{
+    max-width: 30rem;
+}
+
+.citations{
+    width: 10rem;
+}
+
+.image{
+  width: 15rem;
+  height: 15rem;
+  object-fit: contain;
+  overflow: hidden;
+  object-position: center;
+  transition: 0.3s ease-in-out all;
+}
+
+.image:focus,
+.image:hover{
+  border-radius: 4rem;
+}
+
+.images{
+  width: 15rem;
+  height: 15rem;
+}
+
+.productImgs{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+}
+
+
+
