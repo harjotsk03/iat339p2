@@ -426,8 +426,6 @@ margin-top: 5.75rem;
   margin-right: 1rem;
 }
 
-
-
 .productCardButtons{
   width: 100%;
   display: flex;
@@ -454,16 +452,6 @@ margin-top: 5.75rem;
   color: white;
   border-top-right-radius: 7rem;
   margin-top: -6rem;
-  border-top-left-radius: 7rem;
-}
-
-.products{
-  height: 60vh;
-  padding: 10rem 10rem;
-  background-color: green;
-  color: white;
-  border-top-right-radius: 7rem;
-  margin-top: -6.5rem;
   border-top-left-radius: 7rem;
 }
 
@@ -550,6 +538,15 @@ font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
   gap: 2rem;
+}
+
+.listing-section-horizontal{
+
+  
+}
+
+.product-listing{
+  
 }
 
 .productCard {
