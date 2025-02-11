@@ -17,6 +17,7 @@
   font-weight: 600;
   font-style: normal;
   font-size: 2.25rem;
+  margin-bottom: 40px;
 }
 
 .subHeading{
@@ -540,15 +541,6 @@ font-family: "Poppins", sans-serif;
   gap: 2rem;
 }
 
-.listing-section-horizontal{
-
-  
-}
-
-.product-listing{
-  
-}
-
 .productCard {
   width: 25rem;
   background: #fafafa;
@@ -627,4 +619,84 @@ font-family: "Poppins", sans-serif;
     width: 100%;
     background-color: #e4e7ea;
     height: 0.1rem;
+}
+
+
+
+
+.listing-section-horizontal {
+  display: flex;
+  gap: 1rem;
+  max-width: 80%;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+.listing-section-horizontal::-webkit-scrollbar {
+  display: none;
+}
+
+.product {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+/* Background Images */
+.bottleOpener {
+  background-image: url("./assets/ULbottleOpener1.png");
+}
+
+.coffeeTable {
+  background-image: url("./assets/ULlowCoffeeTable1.png");
+}
+
+.corporateMug {
+  background-image: url("./assets/ULcorporateMug1.png");
+}
+
+.fiveTierShelving {
+  background-image: url("./assets/ULfiveTierShelving1.png");
+}
+
+/* Tag on top-left */
+.product-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+/* Discover More Button */
+.discover-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.discover-btn:hover {
+  background: black;
+  color: white;
 }
