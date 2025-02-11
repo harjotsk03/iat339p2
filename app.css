@@ -61,15 +61,14 @@
   border-top-left-radius: 7rem;
 }
 
-/* PRODUCTS */
-
-.products {
+.products-section {
   height: 60vh;
   padding: 10rem 10rem;
   background-color: green;
   color: white;
   border-top-right-radius: 7rem;
   margin-top: -6rem;
+  margin-bottom: 25rem;
   border-top-left-radius: 7rem;
 }
 
@@ -77,7 +76,7 @@
   display: flex;
   gap: 1rem;
   max-width: 80%;
-  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 1rem 0;
   margin: 0 auto;
@@ -98,34 +97,7 @@
   scroll-snap-align: start;
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-}
-
-/* Background Images */
-.bottleOpener {
-  background-image: url("./assets/ULbottleOpener1.png");
-}
-
-.coffeeTable {
-  background-image: url("./assets/ULlowCoffeeTable1.png");
-}
-
-.corporateMug {
-  background-image: url("./assets/ULcorporateMug1.png");
-}
-
-.fiveTierShelving {
-  background-image: url("./assets/ULfiveTierShelving1.png");
-}
-
-.customerReviews {
-  height: 20vh;
-  padding: 10rem 10rem;
-  background-color: blue;
-  color: white;
-  border-top-right-radius: 7rem;
-  margin-top: -6.5rem;
-  border-top-left-radius: 7rem;
+  box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
 }
 
 /* Tag on top-left */
@@ -138,6 +110,50 @@
   font-size: 0.875rem;
   font-weight: bold;
   border-radius: 0.5rem;
+  color: black;
+}
+
+/* Background Images */
+
+.oneSeaterChair {
+  background-image: url("./assets/ULoneSeaterChair1.png");
+}
+.twoSeaterSofa {
+  background-image: url("./assets/ULTwoSeaterSofa1.png");
+}
+.threeSeaterSofa {
+  background-image: url("./assets/ULthreeSeaterSofa1.png");
+}
+.lowCoffeeTableOne {
+  background-image: url("./assets/ULlowCoffeeTable1.png");
+}
+.coffeeTableOne {
+  background-image: url("./assets/ULcoffeeTable1.png");
+}
+.sideTableOrange {
+  background-image: url("./assets/ULsideTableOrange1.png");
+}
+.bottleOpener {
+  background-image: url("./assets/ULbottleOpener1.png");
+}
+
+.corporateMug {
+  background-image: url("./assets/ULcorporateMug1.png");
+}
+
+.fiveTierShelving {
+  background-image: url("./assets/ULfiveTierShelving1.png");
+}
+
+/* !CUSTOMER REVIEWS */
+.customerReviews {
+  height: 20vh;
+  padding: 10rem 10rem;
+  background-color: blue;
+  color: white;
+  border-top-right-radius: 7rem;
+  margin-top: -6.5rem;
+  border-top-left-radius: 7rem;
 }
 
 /* Discover More Button */
@@ -191,19 +207,19 @@
 /* ! NAV */
 
 nav {
-    background-color: #23473c;
-    padding: 1.5rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
+  background-color: #23473c;
+  padding: 1.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo {
@@ -305,12 +321,12 @@ nav {
 
 /* ! PRODUCT PAGE HERO */
 
-.productPageHero{
+.productPageHero {
   height: 100vh;
   background: green;
 }
 
-.productPageHero2{
+.productPageHero2 {
   height: 100vh;
   background: orange;
 }
