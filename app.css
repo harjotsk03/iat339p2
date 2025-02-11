@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-.mainHeading{
+
+.mainHeading {
+
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 3rem;
 }
 
-.secondaryHeading{
+.secondaryHeading {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -21,14 +23,14 @@
   color: black;
 }
 
-.subHeading{
+.subHeading {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1.75rem;
 }
 
-.secondarySubHeading{
+.secondarySubHeading {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -45,7 +47,7 @@
 
 /* !HEADER */
 
-.header{
+.header {
   height: 65vh;
   padding: 10rem 10rem;
   background-color: orange;
@@ -149,7 +151,6 @@
 }
 
 /* !CUSTOMER REVIEWS */
-
 .customerReviews {
   height: 20vh;
   padding: 10rem 10rem;
@@ -208,73 +209,262 @@
   opacity: 50%;
 }
 
+/* ! NAV */
 
+nav {
+    background-color: #23473c;
+    padding: 1.5rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
-
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-left: 3rem;
+}
 
 
 /* !MOBILE */
 
 @media screen and (max-width: 720px) {
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 3rem;
+}
 
-  .mainHeading{
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown > a:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #23473c;
+  min-width: 10rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-top: 0.5rem;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Show dropdown on hover OR when dropdown or its trigger is focused */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+  background-color: #23473c;
+  color: #f4ebd0;
+  padding-left: 20px;
+  outline: none;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.nav-links > a:hover,
+.nav-links > a:focus,
+.dropdown > a:hover {
+  color: #f4ebd0;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  outline: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  z-index: 100;
+  margin-right: 3rem;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* ! PRODUCT PAGE HERO */
+
+.productPageHero{
+  height: 100vh;
+  background: green;
+}
+
+.productPageHero2{
+  height: 100vh;
+  background: orange;
+}
+
+/* DESKTOP RESPONSIVENESS*/
+
+@media screen and (max-width: 720px) {
+  .mainHeading {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2.25rem;
   }
-  
-  .secondaryHeading{
+
+  .secondaryHeading {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 1.75rem;
   }
-  
-  .subHeading{
+
+  .subHeading {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.5rem;
   }
-  
-  .secondarySubHeading{
+
+  .secondarySubHeading {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 1.25rem;
   }
 
-/* !FO0TER */
 
-.header{
-  height: 70vh;
-  padding: 8rem 2rem;
-  background-color: orange;
-  color: white;
+  /* !FO0TER */
+
+  .header {
+    height: 70vh;
+    padding: 8rem 2rem;
+    background-color: orange;
+    color: white;
+  }
+
+  .footer {
+    background: #23473c;
+    padding: 4rem 3rem;
+    max-width: 100%;
+  }
+
+  .footerText {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  .footerText2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: white;
+    opacity: 50%;
+  }
+
+  nav {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #23473c;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    z-index: 99;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  .dropdown-content {
+    position: static;
+    background-color: transparent;
+    display: block;
+    box-shadow: none;
+  }
+
+  .dropdown-content a {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .dropdown-content a:hover,
+  .dropdown-content a:focus {
+    padding-left: 1rem;
+    background-color: transparent;
+  }
+
+  .dropdown > a,
+  .dropdown-content a,
+  .nav-links > a {
+    margin: 0.5rem 0;
+  }
 }
 
-.footer{
-  background: #23473c;
-  padding: 4rem 3rem;
+.hamburger.active .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.footerText{
- font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.1rem; 
-  color: white;
+.hamburger.active .line2 {
+  opacity: 0;
 }
 
-.footerText2{
-font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9rem;
-  color: white;
-  opacity: 50%;
-}
-
+.hamburger.active .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
