@@ -1,239 +1,260 @@
-.navMiddle {
-    background: #23473c;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-    border-radius: 100rem;
-    padding: 1rem 2rem;
-    width: fit-content;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap');
 
-  .navButton{
-    color: white;
-    background-color: transparent;
-    padding: 1rem;
-    border: none;
-    transition: 0.3s ease-in-out all;
-    margin: 0;
-    text-decoration: none;
-    text-align: center;
-    font-family: "Poppins";
-    font-size: 0.8rem;
-    padding: 0rem 1.2rem;
-    font-weight: 400;
-    opacity: 40%;
-  }
-
-  .navRight{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-right: 2rem;
-  }
-
-
-  .mobile{
-    visibility: hidden;
-    background: green;
-  }
-
-  .navContainer{
-    z-index: 40;
-    background: transparent;
-    height: max-content;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    top: 1rem;
-    left: 0;
-    width: 100%;
-  }
-
-  .hamburger {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-
-  .line{
-    width: 100%;
-    background-color: #e4e7ea;
-    height: 0.1rem;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.navButtonActive{
-    color: #F4EBD0;
-    background-color: transparent;
-    padding: 1rem;
-    border: none;
-    transition: 0.3s ease-in-out all;
-    text-decoration: none;
-    text-align: center;
-    font-family: "Poppins";
-    font-weight: 600;
-    font-size: 0.8rem;
-  }
 
-  .navButton{
-    color: white;
-    background-color: transparent;
-    padding: 1rem;
-    border: none;
-    transition: 0.3s ease-in-out all;
-    margin: 0;
-    text-decoration: none;
-    text-align: center;
-    font-family: "Poppins";
-    font-size: 0.8rem;
-    padding: 0rem 1.2rem;
-    font-weight: 400;
-    opacity: 40%;
-  }
+.mainHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.secondaryHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.25rem;
+  margin-bottom: 40px;
+}
+
+.subHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.75rem;
+}
+
+.secondarySubHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+
+.paragraphText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  max-width: 75%;
+}
+
+/* !HEADER */
+
+.header{
+  height: 65vh;
+  padding: 10rem 10rem;
+  background-color: orange;
+  color: white;
+}
+
+.guarantee {
+  height: 10vh;
+  padding: 10rem 10rem;
+  background-color: yellow;
+  color: white;
+  border-top-right-radius: 7rem;
+  margin-top: -6.5rem;
+  border-top-left-radius: 7rem;
+}
+
+/* PRODUCTS */
+
+.products {
+  height: 60vh;
+  padding: 10rem 10rem;
+  background-color: green;
+  color: white;
+  border-top-right-radius: 7rem;
+  margin-top: -6rem;
+  border-top-left-radius: 7rem;
+}
+
+.listing-section-horizontal {
+  display: flex;
+  gap: 1rem;
+  max-width: 80%;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+.listing-section-horizontal::-webkit-scrollbar {
+  display: none;
+}
+
+.product {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+/* Background Images */
+.bottleOpener {
+  background-image: url("./assets/ULbottleOpener1.png");
+}
+
+.coffeeTable {
+  background-image: url("./assets/ULlowCoffeeTable1.png");
+}
+
+.corporateMug {
+  background-image: url("./assets/ULcorporateMug1.png");
+}
+
+.fiveTierShelving {
+  background-image: url("./assets/ULfiveTierShelving1.png");
+}
+
+
+
+.customerReviews {
+  height: 20vh;
+  padding: 10rem 10rem;
+  background-color: blue;
+  color: white;
+  border-top-right-radius: 7rem;
+  margin-top: -6.5rem;
+  border-top-left-radius: 7rem;
+}
+
+/* Tag on top-left */
+.product-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+/* Discover More Button */
+.discover-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.discover-btn:hover {
+  background: black;
+  color: white;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #23473c;
+  padding: 5rem 14rem;
+  color: white;
+  border-top-right-radius: 7rem;
+  margin-top: -7rem;
+  border-top-left-radius: 7rem;
+}
+
+.footerText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.footerText2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: white;
+  opacity: 50%;
+}
+
+
+
+@media screen and (max-width: 720px) {
+
 
   .mainHeading{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
   
   .secondaryHeading{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 2.25rem;
-    margin-bottom: 40px;
+    font-size: 1.75rem;
   }
-
-  .paragraphText{
+  
+  .subHeading{
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.1rem;
-    max-width: 75%;
-  }
-
-
-/* PRODUCTS */
-
-  .products{
-    height: 60vh;
-    padding: 10rem 10rem;
-    background-color: green;
-    color: white;
-    border-top-right-radius: 7rem;
-    margin-top: -6rem;
-    border-top-left-radius: 7rem;
-  }
-
-  .listing-section-horizontal {
-    display: flex;
-    gap: 1rem;
-    max-width: 80%;
-    overflow-x: auto; /* Allow horizontal scrolling */
-    scroll-snap-type: x mandatory;
-    padding: 1rem 0;
-    margin: 0 auto;
-    justify-content: flex-start;
-  }
-  
-  .listing-section-horizontal::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .product {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 1rem;
-    background-size: cover;
-    background-position: center;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Background Images */
-  .bottleOpener {
-    background-image: url("./assets/ULbottleOpener1.png");
-  }
-  
-  .coffeeTable {
-    background-image: url("./assets/ULlowCoffeeTable1.png");
-  }
-  
-  .corporateMug {
-    background-image: url("./assets/ULcorporateMug1.png");
-  }
-  
-  .fiveTierShelving {
-    background-image: url("./assets/ULfiveTierShelving1.png");
-  }
-  
-  /* Tag on top-left */
-  .product-tag {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-    font-weight: bold;
-    border-radius: 0.5rem;
-  }
-  
-  /* Discover More Button */
-  .discover-btn {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    background: white;
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-    font-weight: bold;
-    border-radius: 1rem;
-    cursor: pointer;
-    border: none;
-    transition: background 0.3s ease-in-out;
-  }
-  
-  .discover-btn:hover {
-    background: black;
-    color: white;
-  }
-
-  
-
-  /* FOOTER */
-
-  .footer{
-    background: #23473c;
-    padding: 5rem 14rem;
-    color: white;
-    border-top-right-radius: 7rem;
-    margin-top: -7rem;
-    border-top-left-radius: 7rem;
-  }
-  
-  .footerText{
-   font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.1rem; 
-    color: white;
+    font-size: 1.5rem;
   }
   
-  .footerText2{
-  font-family: "Poppins", sans-serif;
-    font-weight: 400;
+  .secondarySubHeading{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     font-style: normal;
-    font-size: 0.9rem;
-    color: white;
-    opacity: 50%;
+    font-size: 1.25rem;
   }
+
+
+
+/* !FO0TER */
+
+.header{
+  height: 70vh;
+  padding: 8rem 2rem;
+  background-color: orange;
+  color: white;
+}
+
+.footer{
+  background: #23473c;
+  padding: 4rem 3rem;
+}
+
+.footerText{
+ font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem; 
+  color: white;
+}
+
+.footerText2{
+font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: white;
+  opacity: 50%;
+}
+
+}
