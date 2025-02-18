@@ -10,6 +10,7 @@
   font-weight: 700;
   font-style: normal;
   font-size: 3rem;
+  line-height: 3rem;
 }
 
 .secondaryHeading {
@@ -17,7 +18,7 @@
   font-weight: 600;
   font-style: normal;
   font-size: 2.25rem;
-  margin-bottom: 40px;
+
 }
 
 .subHeading {
@@ -61,56 +62,50 @@
   border-top-left-radius: 7rem;
 }
 
-.products-section {
-  height: 60vh;
-  padding: 10rem 10rem;
+/* ! PRODUCT SECTION */
+
+.product-section {
+  height: max-content;
+  /* padding: 10rem 10rem; */
   background-color: green;
   color: white;
   border-top-right-radius: 7rem;
   margin-top: -6rem;
   margin-bottom: 25rem;
   border-top-left-radius: 7rem;
-}
-
-.listing-section-horizontal {
+  overflow: hidden;
+  flex-direction: row;
   display: flex;
-  gap: 1rem;
-  max-width: 80%;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 1rem 0;
-  margin: 0 auto;
-  justify-content: flex-start;
-}
-
-.listing-section-horizontal::-webkit-scrollbar {
-  display: none;
 }
 
 .product {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 1rem;
+  width: 50%;
+  height: 35rem;
   background-size: cover;
   background-position: center;
   flex: 0 0 auto;
   scroll-snap-align: start;
-  position: relative;
+  position:static;
   overflow: hidden;
   box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
 }
 
-/* Tag on top-left */
-.product-tag {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  font-weight: bold;
-  border-radius: 0.5rem;
-  color: black;
+.product-description {
+    flex-direction: row;
+  display: flex;
+
+}
+
+.row-1{
+  flex-direction: row;
+  display: flex;
+  
+}
+
+.row-2{
+  flex-direction: row;
+  display: flex;
+
 }
 
 /* Background Images */
@@ -144,6 +139,10 @@
 .fiveTierShelving {
   background-image: url("./assets/ULfiveTierShelving1.png");
 }
+
+
+
+
 
 /* !CUSTOMER REVIEWS */
 .customerReviews {
@@ -322,8 +321,38 @@ nav {
 /* ! PRODUCT PAGE HERO */
 
 .productPageHero {
-  height: 100vh;
-  background: green;
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 8rem;
+}
+
+.productHeroHeading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.productPageHeroLeft {
+  width: 60%;
+  background-color: yellow;
+  border-top-right-radius: 7rem;
+  border-bottom-right-radius: 7rem;
+  overflow: hidden;
+}
+
+.productPageHeroLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productPageHeroRight {
+  width: 40%;
+  padding-left: 5rem;
 }
 
 .productPageHero2 {
@@ -331,7 +360,18 @@ nav {
   background: orange;
 }
 
-/* !MEDIAIIDWAIDJAIHDUDAHWDUHDDYHAWYDGAWHUDIJUHYGTFCRTYGHUJIUHYGTFCFYGUHIJOKIJUHYGTFRFGYHUJIJUHYGTRFGYHUJI */
+.top{
+  margin-top: 10rem;
+}
+
+
+/* !DESKTOP LAYOUT ABOVE */
+
+/* ! ______________________________________________________________________________________________________________________________________________________________________________ */
+
+ 
+/* !MOBILE LAYOUT BELOW */
+
 
 @media screen and (max-width: 720px) {
   .mainHeading {
@@ -443,6 +483,26 @@ nav {
   .dropdown-content a,
   .nav-links > a {
     margin: 0.5rem 0;
+  }
+
+  .productPageHero {
+    height: max-content;
+    background: green;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .productPageHeroLeft {
+    width: 100%;
+    height: 40vh;
+    background-color: yellow;
+    border-bottom-right-radius: 0rem;
+  }
+
+  .productPageHeroRight {
+    width: 100%;
+    height: 40vh;
+    background-color: blue;
   }
 }
 
